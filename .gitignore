@@ -1,0 +1,13 @@
+# Private source material — never publish or commit.
+data/
+transcripts/
+private/
+*.m4a
+*.wav
+*.mp3
+*.srt
+*.vtt
+
+# Local system files
+.DS_Store
+.omx/

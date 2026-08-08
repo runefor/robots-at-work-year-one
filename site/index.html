@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ROBOTS AT WORK : YEAR ONE 현장 후기와 로보틱스 기술 학습 노트">
+    <title>ROBOTS AT WORK : YEAR ONE — 현장 후기와 기술 노트</title>
+    <style>
+      :root { --ink:#172033; --muted:#5e6b82; --paper:#f6f8fc; --line:#dce3ef; --blue:#2457d6; --mint:#00a68a; --card:#fff; }
+      * { box-sizing:border-box; }
+      body { margin:0; color:var(--ink); background:var(--paper); font:16px/1.72 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+      a { color:var(--blue); text-underline-offset:3px; }
+      .hero { color:#fff; background:linear-gradient(125deg,#15264d,#2457d6 56%,#00a68a); }
+      .hero-inner, main, footer { width:min(1040px, calc(100% - 40px)); margin:auto; }
+      .hero-inner { padding:76px 0 64px; }
+      .eyebrow { display:inline-block; margin:0 0 14px; padding:4px 10px; border:1px solid #ffffff66; border-radius:99px; font-size:.82rem; letter-spacing:.08em; }
+      h1 { max-width:850px; margin:0; font-size:clamp(2.2rem,6vw,4.8rem); line-height:1.08; letter-spacing:-.05em; }
+      .subtitle { max-width:720px; margin:22px 0 0; font-size:1.13rem; color:#e7ecff; }
+      .meta { display:flex; flex-wrap:wrap; gap:10px 22px; margin:28px 0 0; color:#d8e4ff; font-size:.93rem; }
+      main { padding:38px 0 76px; }
+      nav { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 34px; }
+      nav a { padding:7px 12px; border:1px solid var(--line); border-radius:99px; background:#fff; color:var(--ink); text-decoration:none; font-size:.9rem; }
+      section { margin:0 0 54px; }
+      h2 { margin:0 0 16px; font-size:1.75rem; letter-spacing:-.03em; }
+      h3 { margin:0; font-size:1.12rem; letter-spacing:-.02em; }
+      .lead { max-width:780px; font-size:1.12rem; }
+      .notice { padding:16px 18px; border-left:4px solid var(--mint); background:#e9faf6; color:#174f48; border-radius:0 10px 10px 0; }
+      .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+      .card { padding:22px; border:1px solid var(--line); border-radius:14px; background:var(--card); box-shadow:0 8px 26px #1720330a; }
+      .card p:last-child { margin-bottom:0; }
+      .tag { display:inline-block; margin:0 0 9px; color:var(--mint); font-size:.78rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; }
+      .talks { display:grid; gap:12px; }
+      .talk { padding:20px 22px; border:1px solid var(--line); border-radius:12px; background:#fff; }
+      .talk ul { margin:10px 0 0; padding-left:20px; }
+      .study { display:grid; gap:18px; }
+      .study .card { border-top:4px solid var(--blue); }
+      .study h3 { margin-bottom:8px; }
+      .level { margin:14px 0 0; padding:13px 14px; background:#f1f5ff; border-radius:9px; }
+      .level strong { display:block; margin-bottom:3px; font-size:.86rem; color:#25427e; }
+      .sources { margin:13px 0 0; padding-left:18px; font-size:.92rem; }
+      .sources li { margin:3px 0; }
+      .takeaways { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+      .takeaway { padding:18px; border-radius:12px; background:#172033; color:#f4f7ff; }
+      .takeaway b { display:block; margin-bottom:5px; color:#73e8d4; }
+      footer { padding:25px 0 44px; color:var(--muted); font-size:.9rem; border-top:1px solid var(--line); }
+      @media (max-width:720px) { .hero-inner { padding:54px 0 48px; } .grid,.takeaways { grid-template-columns:1fr; } main { padding-top:26px; } }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">FIELD NOTES · 2026.08.08</p>
+        <h1>ROBOTS AT WORK<br>YEAR ONE</h1>
+        <p class="subtitle">현장 메모로 읽는 피지컬 AI의 현실: 학습 알고리즘보다 먼저 풀어야 할 보상, 데이터, 하드웨어, 운영의 문제들.</p>
+        <div class="meta"><span>디캠프 마포</span><span>박종혁 교수 발표 중간 ~ 유병호 대표 발표</span><span><a href="https://event-us.kr/airoboticskr/event/127880" style="color:#fff">행사 페이지 ↗</a></span></div>
+      </div>
+    </header>
+    <main>
+      <nav aria-label="페이지 목차"><a href="#review">현장 후기</a><a href="#talks">발표 메모</a><a href="#learning">기술 학습 노트</a><a href="#next">다음 액션</a></nav>
+
+      <section id="review">
+        <h2>한 줄 요약</h2>
+        <p class="lead">피지컬 AI는 모델 하나의 성능 문제가 아니라, <b>현실을 얼마나 잘 관측하고·목표를 얼마나 정확히 보상으로 옮기고·실제 현장에서 얼마나 안정적으로 반복할 수 있는가</b>의 문제였다.</p>
+        <div class="notice"><b>작성 기준</b> · 이 페이지의 발표 요약은 현장 메모로 확인된 내용만 담았습니다. 녹음 전사가 끝나기 전에는 발언을 직접 인용하지 않으며, 전사 후 세부 사례와 용어를 보강합니다.</div>
+      </section>
+
+      <section id="talks">
+        <h2>발표에서 잡은 문제들</h2>
+        <div class="talks">
+          <article class="talk"><span class="tag">강화학습 · Sim-to-Real</span><h3>부산대학교 박종혁 교수님</h3><ul><li>시뮬레이터의 근사와 실제 하드웨어·환경의 차이가 정책 전이를 어렵게 만든다.</li><li>마찰과 미끄러짐처럼 접촉이 많은 현상은 모델링과 학습 모두에서 까다롭다.</li><li>상태 표현과 보상 설계가 핵심이며, PPO·SAC·정규화 같은 방법은 이를 잘 받쳐 주는 도구다.</li><li>보상 해킹을 피하려면 “점수”가 실제 목표를 대변하는지 반복 검증해야 한다.</li></ul></article>
+          <article class="talk"><span class="tag">추후 전사 보강</span><h3>광운대학교 박수한 교수님 · 로보티즈 표윤석 님</h3><p>녹음은 보관되어 있으며, 전사 후 발표별 사례와 기술적 맥락을 이 자리에 보강한다. 현재는 확인되지 않은 세부 내용을 공개 글에 넣지 않는다.</p></article>
+          <article class="talk"><span class="tag">피지컬 AI · 농업 · 전사 보강</span><h3>AI Robotics KR 운영진 / Meta Farmers 사례</h3><ul><li>딸기 농장은 비정형 환경이며, 범용성보다 안정적인 반복 운영이 중요하다.</li><li>발표에서는 수확 품질을 <b>Coverage</b>, <b>Success Rate</b>, <b>Damage Rate</b>로 본다고 소개했다. 빠르게 따는 것보다 놓치지 않고·손상 없이 따는지를 함께 봐야 한다는 뜻이다.</li><li>현장 예시로 정상 수확의 수익 약 50원과 손상 과실의 손실 약 500원을 대비해, 실패 비용이 성공 이익보다 훨씬 클 수 있음을 설명했다.</li><li>하나의 범용 그리퍼보다 작물·작업에 맞춰 end-effector를 교체하는 모듈형 접근과, 변화하는 농장 데이터를 반복 수집하는 운영 방식을 소개했다.</li></ul></article>
+          <article class="talk"><span class="tag">산업 로보틱스</span><h3>디든로보틱스 김준하 대표님</h3><ul><li>범용 로봇보다 산업 현장에 맞춘 구동기와 하드웨어를 직접 설계하는 접근이 소개됐다.</li><li>스파이더 로봇 구동에는 RRT와 MPC 조합을 적용했다는 현장 메모가 있다.</li><li>산업 현장에서는 검증 가능한 해법과 도메인 이해가 중요하다는 인상을 남겼다.</li></ul></article>
+          <article class="talk"><span class="tag">이동성</span><h3>유로보틱스 유병호 대표님</h3><p>“비정형 산업 환경에서 로봇은 어떻게 이동의 자유를 얻을 수 있을까?”라는 질문을 중심으로 이어졌다. 상세 내용은 녹음 전사 뒤 사실 확인을 거쳐 보강한다.</p></article>
+        </div>
+      </section>
+
+      <section>
+        <h2>세 가지 공통 인사이트</h2>
+        <div class="takeaways"><div class="takeaway"><b>01 · 현실은 데이터 밖에 있다</b>시뮬레이션에서 빠진 접촉·지연·오차가 현장 성능을 좌우한다.</div><div class="takeaway"><b>02 · 목표를 수치로 만드는 일이 어렵다</b>알고리즘 선택만큼 상태와 보상 정의가 결과를 바꾼다.</div><div class="takeaway"><b>03 · 운영 가능성이 제품성이다</b>안정성, 유지보수, 비용이 기술 데모를 실제 자동화로 바꾼다.</div></div>
+      </section>
+
+      <section id="learning">
+        <h2>기술 학습 노트</h2>
+        <p>현장 발언과 일반 기술 설명을 분리했다. 아래 “발표 맥락”은 메모에서, 나머지는 원 논문·연구 자료에서 확인할 수 있다.</p>
+        <div class="study">
+          <article class="card"><span class="tag">Reinforcement Learning</span><h3>PPO와 SAC: 무엇을 먼저 비교해야 하나</h3><p><b>입문.</b> 강화학습은 행동 뒤의 보상을 보고 다음 행동을 더 잘 고르는 방법이다. PPO는 새 정책이 한 번에 너무 크게 바뀌지 않게 제한하는 on-policy 계열이고, SAC는 과거 경험을 재사용하는 off-policy 계열이며 행동의 다양성도 장려한다.</p><div class="level"><strong>실무/실험 관점</strong>알고리즘을 고르기 전에 관측(state), 행동(action), 성공 판정, 안전 한계가 먼저다. PPO는 구현과 튜닝의 기준점으로, SAC는 연속 제어에서 샘플 재사용이 중요할 때 비교 대상으로 두기 좋다. 상태·보상 정규화는 각 입력과 학습 신호의 스케일을 안정화하는 기본 점검 항목이다.</div><p><b>발표 맥락.</b> 박종혁 교수님 메모에서 PPO·SAC와 정규화는 “상태와 보상 설계” 다음에 적용할 도구로 언급됐다.</p><ul class="sources"><li><a href="https://arxiv.org/abs/1707.06347">PPO 원 논문</a></li><li><a href="https://proceedings.mlr.press/v80/haarnoja18b.html">SAC 원 논문</a></li></ul></article>
+          <article class="card"><span class="tag">Reward Design</span><h3>보상 설계와 reward hacking</h3><p><b>입문.</b> 에이전트는 사람이 바란 결과가 아니라 보상식이 주는 점수를 최대로 만든다. 따라서 점수는 높지만 실제 작업은 실패하는 “명세의 빈틈”이 생길 수 있다.</p><div class="level"><strong>실무/실험 관점</strong>성공률 하나로 끝내지 말고, 충돌·에너지·시간·자세·안전 제약을 별도 지표로 로그에 남긴다. 보상 변경 전후에는 정책 영상을 사람이 검토하고, 악용 가능한 지름길을 찾는 테스트 시나리오를 둔다. LLM은 보상 후보 코드 생성과 실험 요약을 도울 수 있지만, 보상 검증 책임을 대신하지는 않는다.</div><p><b>발표 맥락.</b> 현장 메모에는 보상 해킹의 위험과 LLM을 이용한 보상 설계 실험이 언급됐다.</p><ul class="sources"><li><a href="https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/">DeepMind의 specification gaming 사례</a></li><li><a href="https://proceedings.mlr.press/v235/wang24bn.html">RL-VLM-F: 모델 피드백을 보상으로 쓰는 연구</a></li></ul></article>
+          <article class="card"><span class="tag">Sim-to-Real</span><h3>시뮬레이션에서 되던 일이 왜 현실에서 안 될까</h3><p><b>입문.</b> 시뮬레이터는 현실의 복사본이 아니라 빠른 근사 모델이다. 마찰, 백래시, 센서 노이즈, 지연, 조명, 물체 상태가 조금만 달라도 정책은 전혀 다른 입력을 받을 수 있다.</p><div class="level"><strong>실무/실험 관점</strong>현장 계측으로 질량·마찰·지연의 범위를 먼저 잡고, 학습 때 그 범위를 흔드는 domain randomization을 적용한다. 전이 평가는 시뮬레이터 점수가 아니라 실제 성공률, 실패 모드, 복구 가능성으로 한다.</div><p><b>발표 맥락.</b> 박종혁 교수님 메모는 특히 접촉과 마찰/미끄러짐을 현실 격차의 어려운 예로 들었다.</p><ul class="sources"><li><a href="https://arxiv.org/abs/1710.06537">Dynamics randomization을 이용한 Sim-to-Real</a></li><li><a href="https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2022.799893/full">랜덤화 시뮬레이션 로봇 학습 리뷰</a></li></ul></article>
+          <article class="card"><span class="tag">Learning from Data</span><h3>모방학습, GAIL, 오프라인 강화학습</h3><p><b>입문.</b> 모방학습은 전문가 시연을 보고 행동을 배우고, GAIL은 “전문가처럼 보이는가”를 판별하는 신호를 이용해 이를 확장한다. 오프라인 강화학습은 새로 환경을 탐험하지 않고, 이미 모은 로그 데이터만으로 정책을 학습한다.</p><div class="level"><strong>실무/실험 관점</strong>셋 모두 데이터 범위 밖의 행동에 약해질 수 있다. 데이터가 성공·실패·예외 상황을 얼마나 포함하는지, 센서와 행동의 시간 동기화가 맞는지, 실제 배포 전 안전 제약이 있는지를 먼저 점검한다. 최대 엔트로피 학습은 보상뿐 아니라 행동의 불확실성과 탐색 다양성도 함께 고려하는 관점이며 SAC의 기반 중 하나다.</div><p><b>발표 맥락.</b> 현장 메모에는 전문가 데이터 수집 비용, 적대적 신경망 활용, 전문가 시연이 부족할 때의 오프라인 강화학습이 언급됐다.</p><ul class="sources"><li><a href="https://proceedings.neurips.cc/paper/2016/hash/cc7e2b878868cbae992d1fb743995d8f-Abstract.html">GAIL 원 논문</a></li><li><a href="https://arxiv.org/abs/2005.01643">Offline RL 튜토리얼·리뷰</a></li></ul></article>
+          <article class="card"><span class="tag">Planning &amp; Control</span><h3>RRT + MPC: 길 찾기와 따라가기의 분업</h3><p><b>입문.</b> RRT는 충돌 없는 경로 후보를 넓게 탐색하는 데 쓰이고, MPC는 현재 상태를 계속 반영해 짧은 미래를 예측하며 제어 입력을 갱신한다. 한쪽은 “어디로 갈지”, 다른 쪽은 “지금 어떻게 움직일지”에 가깝다.</p><div class="level"><strong>실무/실험 관점</strong>RRT 경로가 실제 구동기의 속도·가속도·접지 한계를 만족하는지, MPC의 모델 오차와 계산 시간이 제어 주기에 들어오는지 측정한다. 학습 기반 정책과 결합할 때도 충돌 회피와 안전 제약의 최종 책임을 어디에 둘지 분명히 해야 한다.</div><p><b>발표 맥락.</b> 디든로보틱스 김준하 대표님 발표 메모에는 스파이더 로봇에 RRT+MPC를 적용한 사례가 적혀 있다.</p><ul class="sources"><li><a href="https://lavalle.pl/papers/Lav98c.pdf">RRT 원 논문</a></li><li><a href="https://underactuated.csail.mit.edu/trajopt.html">MPC를 포함한 궤적 최적화·제어 강의 노트</a></li></ul></article>
+          <article class="card"><span class="tag">Deployment</span><h3>산업 현장에서는 왜 하드웨어와 경제성이 중요한가</h3><p><b>입문.</b> 로봇은 모델만으로 존재하지 않는다. 센서, 구동기, 기구, 작업물, 작업자, 정비 흐름이 한 시스템이다. 범용 능력보다 특정 공정에서 매일 같은 품질로 일하는 능력이 더 큰 가치가 될 수 있다.</p><div class="level"><strong>실무/실험 관점</strong>PoC의 성공 기준에 처리량·가동률·복구 시간·유지보수 시간·작업자 개입·원가를 함께 둔다. 데이터 수집도 일회성 프로젝트가 아니라 현장 변화에 맞춰 반복되는 운영 체계로 설계한다.</div><p><b>발표 맥락.</b> Meta Farmers 사례와 디든로보틱스 발표 메모는 비정형 환경, 도메인 특화 하드웨어, 안정성 및 경제성의 우선순위를 함께 보여준다.</p></article>
+        </div>
+      </section>
+
+      <section id="next">
+        <h2>다음 액션</h2>
+        <div class="grid"><div class="card"><h3>전사 완료 후</h3><p>발표별 타임스탬프를 메모에 연결하고, 현재 “전사 후 보강” 표기의 세부 사례를 사실 확인해 업데이트한다.</p></div><div class="card"><h3>팀 학습용으로</h3><p>각 기술 노트에서 하나씩 골라 작은 시뮬레이션 과제와 실패 모드를 설계한다. 알고리즘 비교보다 상태·보상·평가 지표를 먼저 문서화한다.</p></div></div>
+      </section>
+    </main>
+    <footer>작성일 2026-08-08 · 현장 메모 기반 초안 · 원자료(오디오·전사본)는 공개하지 않음</footer>
+  </body>
+</html>
