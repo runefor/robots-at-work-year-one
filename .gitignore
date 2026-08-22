@@ -11,3 +11,13 @@ private/
 # Local system files
 .DS_Store
 .omx/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# AI tool state
+.bkit/
+.omc/
+.claude/
