@@ -10,7 +10,6 @@ private/
 
 # Local system files
 .DS_Store
-.omx/
 
 # Secrets
 .env
